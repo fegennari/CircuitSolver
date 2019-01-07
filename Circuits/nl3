@@ -1,0 +1,13 @@
+* Circuit - nl3
+
+M1 3 1 2 2 p_level_3 l=2u w=16u
+M2 5 4 0 0 n_level_3 l=2u w=20u
+M3 8 6 7 7 p_level_3 l=2u w=8u
+R1 9 10 100
+M4 12 11 13 13 n_level_3 l=2u w=10u
+
+.model p_level_3 level=3 
+.model n_level_3 level=3 
+
+.OPTIONS
+.END

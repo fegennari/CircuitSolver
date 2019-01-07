@@ -1,0 +1,25 @@
+* Circuit - nl
+
+OUTPUT 13
+INPUT 14
+7 = BUF(6)
+R1 1 2 324
+R2 3 4 -1
+IC1 n25 n2 n3 n4 n5 n6 n7 n8 n9 n10 n11 n12 n13 n14  7408
+
+
+
+Q1 8 7 9 2n3904
+Q2 12 10 11 2n3906
+C1 15 16 1u     
+D1 17 18 DIODE
+   
+   
+V1 19 20 AC 10
+V2 21 22 AC 3
+
+.model 2n3904 npn
+.model 2n3906 pnp
+
+.OPTIONS
+.END

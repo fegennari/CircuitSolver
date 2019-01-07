@@ -1,0 +1,12 @@
+* Circuit - mos nl
+
+M1 2 1 3 3 n_level_3 l=2u w=20u
+M2 6 4 5 5 p_level_3 l=2u w=18u
+M3 8 7 9 9 n_level_3 l=2u w=10u
+M4 0 10 11 11 p_level_3 l=2u w=8u
+
+.model n_level_3 level=3 
+.model p_level_3 level=3 
+
+.OPTIONS
+.END

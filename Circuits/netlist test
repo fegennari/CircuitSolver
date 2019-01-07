@@ -1,0 +1,24 @@
+#Circuit - netlist test
+
+INPUT 4
+OUTPUT 6
+INPUT 15
+INPUT 13
+OUTPUT 16
+OUTPUT 23
+6 = AND(4,5)
+10 = AND(8,9)
+15 = XOR(3,13,14)
+20 = AND(18,19)
+23 = AND(21,22)
+V1 0 2 AC 40
+C1 2 1 1u
+R1 1 0 30
+L1 1 0 1.2m
+R2 2 3 100
+R3 5 3 1k
+R123456 3 4 .1
+
+
+.OPTIONS
+.END

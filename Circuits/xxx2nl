@@ -1,0 +1,18 @@
+* Circuit - xxx2nl
+
+INPUT(6)
+INPUT(7)
+INPUT(8)
+OUTPUT(4)
+9 = NAND(6 7 8)
+1 = NOT(0)
+2 = NOT(1)
+3 = NOT(2)
+5 = AND(3 3)
+10 = AND(5 5)
+R1 9 0 4.7k
+R2 10 4 22k
+
+
+.OPTIONS
+.END

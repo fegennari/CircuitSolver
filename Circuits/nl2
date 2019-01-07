@@ -1,0 +1,10 @@
+* Circuit - nl2
+
+4 = NOR(9,10)
+6 = NOR(7,8)
+10 = NOR(3,8)
+5 = NOR(4,3)
+
+
+.OPTIONS
+.END

@@ -1,0 +1,45 @@
+PROG            = Circuit_Solver
+LIB             = 
+BINDIR          = .
+LIBDIR          = .
+CC              = gcc
+CCC             = g++
+LIBDIR          = c:/Cygwin/lib/w32api/
+LIBS            = $(LIBDIR)libcomdlg32.a $(LIBDIR)libgdi32.a $(LIBDIR)libuser32.a $(LIBDIR)libkernel32.a
+MOREOBJECTS     =       
+MORELIBS        =       
+CFLAGS          = -DALL -I. -IHeader -ISource -ISource/All_os
+LFLAGS          = -L$(LIBDIR) $(LIBS)
+
+#CC_SRC_FILES   = Source/CircuitSolver.cpp Source/C.S.AnalogAnalysis.cpp Source/C.S.ComplexNumbers.cpp Source/C.S.Draw.cpp Source/C.S.Equation.cpp Source/C.S.FSMDesign.cpp Source/C.S.Graph.cpp Source/C.S.GridArray.cpp Source/C.S.InputVector.cpp Source/C.S.IntegratedCircuit.cpp Source/C.S.IOVector.cpp Source/C.S.LinkCircuit.cpp Source/C.S.Logic.cpp Source/C.S.LogicComponents.cpp Source/C.S.LogicDelay.cpp Source/C.S.LogicEngine.cpp Source/C.S.LogicFunctions.cpp Source/C.S.LogicPropagation.cpp Source/C.S.MOSFET.cpp Source/C.S.Netlist.cpp Source/C.S.NetPointerSet.cpp Source/C.S.Nodes.cpp Source/C.S.PlaceAndRoute.cpp Source/C.S.Scheduling.cpp Source/C.S.SchematicEdit.cpp Source/C.S.SimulationSetup.cpp Source/C.S.StringTable.cpp Source/C.S.TextGraphics.cpp Source/C.S.TopoSort.cpp Source/C.S.Transforms.cpp Source/C.S.Transistor.cpp Source/C.S.Undo.cpp Source/C.S.Utilities.cpp Source/C.S.WindowOps.cpp Source/C.S.Window.cpp Source/Win32/C.S.GraphicsWin32.cpp Source/Win32/C.S.InterfaceWin32.cpp Source/Borrowed_Code/FFT.C
+
+CC_OBJ_FILES   = CircuitSolver.o C.S.AnalogAnalysis.o C.S.ComplexNumbers.o C.S.Draw.o C.S.Equation.o C.S.FSMDesign.o C.S.Graph.o C.S.GridArray.o C.S.InputVector.o C.S.IntegratedCircuit.o C.S.IOVector.o C.S.LinkCircuit.o C.S.Logic.o C.S.LogicComponents.o C.S.LogicDelay.o C.S.LogicEngine.o C.S.LogicFunctions.o C.S.LogicPropagation.o C.S.MOSFET.o C.S.Netlist.o C.S.NetPointerSet.o C.S.Nodes.o C.S.PlaceAndRoute.o C.S.Scheduling.o C.S.SchematicEdit.o C.S.SimulationSetup.o C.S.StringTable.o C.S.TextGraphics.o C.S.TopoSort.o C.S.Transforms.o C.S.Transistor.o C.S.Undo.o C.S.Utilities.o C.S.WindowOps.o C.S.Window.o C.S.GraphicsWin32.o C.S.InterfaceWin32.o FFT.o #CSRes.o
+
+#CC_OBJ_FILES   = $(CC_SRC_FILES:.cpp=.o)
+
+$(PROG): $(CC_OBJ_FILES)
+	$(CCC) $(CC_OBJ_FILES) $(CFLAGS) $(LFLAGS) -o $(PROG)
+
+.cc.o: 
+	$(CCC) $(CFLAGS) -c $<
+
+test:
+	$(MAKE) "CFLAGS=$(CFLAGS) -g 
+
+opt:
+	$(MAKE) "CFLAGS=$(CFLAGS) -O"
+
+debug:
+	$(MAKE) "CFLAGS=$(CFLAGS) -g -DDEBUG -DVERBOSE"
+
+pedantic:
+	$(MAKE) "CFLAGS=$(CFLAGS) -pedantic -Wall -Wcast-qual -Wconversion -Wwrite-strings  -Wstrict-prototypes -Wmissing-prototypes -Wid-clash-31 -DDEBUG -DVERBOSE"
+
+profile:
+	$(MAKE) "CFLAGS=$(CFLAGS) -pg -g -O"
+
+clean:
+	rm -f *~ $(PROG).exe *.o
+
+CSres.o: CircuitSolver.rc
+	windres -o CSres.o CircuitSolver.rc

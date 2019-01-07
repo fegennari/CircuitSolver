@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+3                       ICON    DISCARDABLE     "CircuitSolver.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+1                       CURSOR  PRELOAD DISCARDABLE "blank.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                25
+        MENUITEM "&Open\tCtrl+O",               3
+        MENUITEM "&Save\tCtrl+S",               22
+        MENUITEM "&Close\tCtrl+Shift+C",        26
+        MENUITEM "Save &As\tCtrl+Shift+S",      4
+        MENUITEM "&Revert\tCtrl+R",             23
+        MENUITEM SEPARATOR
+        MENUITEM "&Print\tCtrl+P",              24
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit\tCtrl+Q",               14
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               12
+        MENUITEM "&Redo\tCtrl+Shift+Z",         13
+        MENUITEM SEPARATOR
+        MENUITEM "C&ut\tCtrl+X",                18
+        MENUITEM "&Copy\tCtrl+C",               19
+        MENUITEM "&Paste\tCtrl+V",              20
+        MENUITEM "C&lear\tCtrl+Shift+X",        5
+    END
+    POPUP "&Circuit"
+    BEGIN
+        MENUITEM "&Simulate\tCtrl+E",           0
+        MENUITEM "&RLC Analysis\tCtrl+L",       30
+        MENUITEM "&Preferences\tCtrl+Shift+P",  7
+        MENUITEM "&Cancel\tCtrl+K",             8
+    END
+    POPUP "C&omponent"
+    BEGIN
+        MENUITEM "&Add\tCtrl+A",                1
+        MENUITEM "&Delete\tCtrl+D",             2
+        MENUITEM "&Quick Delete\tCtrl+Shift+D", 100
+        MENUITEM SEPARATOR
+        MENUITEM "&Flip/Rotate\tCtrl+F",        9
+        MENUITEM "&Modify\tCtrl+M",             11
+        MENUITEM "&Get Info\tCtrl+I",           10
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Redraw\tCtrl+Shift+R",       6
+        MENUITEM "&Zoom\tCtrl+W",               15
+        MENUITEM "R&esize Drawing Area\tCtrl+Y", 16
+        MENUITEM "&Grid Resolution\tCtrl+G",    17
+        MENUITEM "Reset &Defaults\tCtrl+U",     21
+        MENUITEM "Reset &Origin\tCtrl+Shift+O", 28
+        MENUITEM "&Fit to Screen\tCtrl+F",      27
+        MENUITEM "Switch Windows\tCtrl+Shift+W", 29
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Circuit Solver",       101
+    END
+END
+
+2 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Exit\tCtrl+Q",               0
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Circuit Solver",       101
+    END
+END
+
+3 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open\tCtrl+O",               13
+        MENUITEM "&Save\tCtrl+S",               14
+        MENUITEM SEPARATOR
+        MENUITEM "&Print\tCtrl+P",              23
+        MENUITEM SEPARATOR
+        MENUITEM "&Return\tCtrl+Q",             9
+    END
+    POPUP "&Commands"
+    BEGIN
+        MENUITEM "Plot &Graph\tCtrl+G",         0
+        MENUITEM "&Enter Equation\tCtrl+E",     1
+        MENUITEM "&Differentiate\tCtrl+D",      7
+        MENUITEM "&Integrate\tCtrl+I",          8
+        MENUITEM "Calculate &X\tCtrl+X",        11
+        MENUITEM "Calculate &Y\tCtrl+Y",        12
+        MENUITEM "&FFT/IFFT\tCtrl+N",           19
+        MENUITEM "&Trace\tCtrl+T",              3
+        MENUITEM "&Locate Point\tCtrl+L",       4
+        MENUITEM "&Smooth/Resolution\tCtrl+W",  18
+        MENUITEM "&Histogram\tCtrl+Shift+H",    21
+        MENUITEM "&Random Data\tCtrl+R",        22
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "Origin/&Axis\tCtrl+A",        2
+        MENUITEM "&Zoom\tCtrl+Z",               6
+        MENUITEM "Zoom &Box\tCtrl+B",           10
+        MENUITEM "&Move/Pan Window\tCtrl+M",    20
+        MENUITEM "&Clear graph\tCtrl+C",        15
+        MENUITEM "&Hold Grid\tCtrl+H",          17
+        MENUITEM "&Fit to Screen\tCtrl+F",      16
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "Graph &Prefs\tCtrl+Shift+P",  5
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Circuit Solver",       101
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+4 ACCELERATORS PRELOAD DISCARDABLE 
+BEGIN
+    "N",            25,                     VIRTKEY, CONTROL
+    "O",            3,                      VIRTKEY, CONTROL
+    "S",            22,                     VIRTKEY, CONTROL
+    "S",            4,                      VIRTKEY, SHIFT, CONTROL
+    "R",            23,                     VIRTKEY, CONTROL
+    "P",            24,                     VIRTKEY, CONTROL
+    "Q",            14,                     VIRTKEY, CONTROL
+    "Z",            12,                     VIRTKEY, CONTROL
+    "Z",            13,                     VIRTKEY, SHIFT, CONTROL
+    "X",            18,                     VIRTKEY, CONTROL
+    "C",            19,                     VIRTKEY, CONTROL
+    "V",            20,                     VIRTKEY, CONTROL
+    "X",            5,                      VIRTKEY, SHIFT, CONTROL
+    "A",            1,                      VIRTKEY, CONTROL
+    "D",            2,                      VIRTKEY, CONTROL
+    "D",            100,                    VIRTKEY, SHIFT, CONTROL
+    "K",            8,                      VIRTKEY, CONTROL
+    "W",            15,                     VIRTKEY, CONTROL
+    "M",            11,                     VIRTKEY, CONTROL
+    "I",            10,                     VIRTKEY, CONTROL
+    "G",            17,                     VIRTKEY, CONTROL
+    "F",            9,                      VIRTKEY, CONTROL
+    "E",            0,                      VIRTKEY, CONTROL
+    "R",            0,                      VIRTKEY, SHIFT, CONTROL
+    "P",            7,                      VIRTKEY, SHIFT, CONTROL
+    "Y",            16,                     VIRTKEY, CONTROL
+    "U",            21,                     VIRTKEY, CONTROL
+    "C",            26,                     VIRTKEY, SHIFT, CONTROL
+    "F",            27,                     VIRTKEY, SHIFT, CONTROL
+    "O",            28,                     VIRTKEY, SHIFT, CONTROL
+    "W",            29,                     VIRTKEY, SHIFT, CONTROL
+    "L",            30,                     VIRTKEY, CONTROL
+END
+
+5 ACCELERATORS PRELOAD DISCARDABLE 
+BEGIN
+    "O",            13,                     VIRTKEY, CONTROL
+    "S",            14,                     VIRTKEY, CONTROL
+    "P",            23,                     VIRTKEY, CONTROL
+    "Q",            9,                      VIRTKEY, CONTROL
+    "G",            0,                      VIRTKEY, CONTROL
+    "E",            1,                      VIRTKEY, CONTROL
+    "D",            7,                      VIRTKEY, CONTROL
+    "I",            8,                      VIRTKEY, CONTROL
+    "X",            11,                     VIRTKEY, CONTROL
+    "Y",            12,                     VIRTKEY, CONTROL
+    "N",            19,                     VIRTKEY, CONTROL
+    "T",            3,                      VIRTKEY, CONTROL
+    "L",            4,                      VIRTKEY, CONTROL
+    "W",            18,                     VIRTKEY, CONTROL
+    "A",            2,                      VIRTKEY, CONTROL
+    "Z",            6,                      VIRTKEY, CONTROL
+    "B",            10,                     VIRTKEY, CONTROL
+    "M",            20,                     VIRTKEY, CONTROL
+    "C",            15,                     VIRTKEY, CONTROL
+    "H",            17,                     VIRTKEY, CONTROL
+    "F",            16,                     VIRTKEY, CONTROL
+    "R",            22,                     VIRTKEY, CONTROL
+    "P",            5,                      VIRTKEY, SHIFT, CONTROL
+    "H",            21,                     VIRTKEY, SHIFT, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+3 DIALOG DISCARDABLE  22, 17, 191, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Circuit Solver"
+FONT 8, "System"
+BEGIN
+    CTEXT           "Circuit Solver",-1,0,5,191,8
+    CTEXT           "by Frank Gennari",-1,0,15,191,8
+    CTEXT           "Version 1.0a ",-1,0,32,191,8
+    CTEXT           "Copyright © 1996-2001",-1,0,44,191,9
+    DEFPUSHBUTTON   "OK",IDOK,79,73,32,14,WS_GROUP
+    ICON            3,-1,24,12,20,20,WS_GROUP
+END
+
+
+4 DIALOG DISCARDABLE  22, 17, 191, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DEMO Mode"
+FONT 8, "System"
+BEGIN
+    CTEXT           "Demo mode limitations are:                                            ",-1,0,5,191,8
+    CTEXT           "* Max of 4000 graph points.                                           ",-1,0,17,191,8
+    CTEXT           "* No new subcircuits or component models.                  ",-1,0,27,191,8
+    CTEXT           "* Subcircuits and component models can't be modified.",-1,0,37,191,8
+    CTEXT           "* Circuits cannot be saved.                                             ",-1,0,47,191,8
+    CTEXT           "* Max of 40 subcircuits and 200 nets in simulation.      ",-1,0,57,191,8
+    DEFPUSHBUTTON   "OK",IDOK,79,73,32,14,WS_GROUP
+END
+
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

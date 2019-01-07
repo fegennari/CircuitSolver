@@ -1,0 +1,2 @@
+bash-2.05$ for foo in *.cc ; do mv `basename $foo .cc`  `basename $foo .cc`.cpp
+ ; done

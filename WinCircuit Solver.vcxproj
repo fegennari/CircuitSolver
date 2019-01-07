@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{33DE0EF8-CF26-9EEE-A0DD-3A0AF73150EF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>header;../header;source/Win32;../source/Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;INCLUDE_WIN32;_DEBUG;_CONSOLE;CS_SET_NAMESPACE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\WinCircuit Solver.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\WinCircuit Solver.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\WinCircuit Solver.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Debug\WinCircuit Solver.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;INCLUDE_WIN32;_CONSOLE;CS_SET_NAMESPACE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\WinCircuit Solver.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>header;../header;source/Win32;../source/Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\WinCircuit Solver.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\WinCircuit Solver.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\WinCircuit Solver.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\C.S.Matrix.cpp" />
+    <ClCompile Include="Source\RLC_opt\C.S.Optimizer.cpp" />
+    <ClCompile Include="Source\RLC_opt\C.S.Oracle.cpp" />
+    <ClCompile Include="Source\RLC_opt\C.S.QueryPoint.cpp" />
+    <ClCompile Include="Source\RLC_opt\C.S.RLC.cpp" />
+    <ClCompile Include="Source\RLC_opt\C.S.RLC_Tree.cpp" />
+    <ClCompile Include="Source\C.S.AnalogAnalysis.cpp" />
+    <ClCompile Include="Source\C.S.ComplexNumbers.cpp" />
+    <ClCompile Include="Source\C.S.Draw.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\C.S.Equation.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\C.S.FSMDesign.cpp" />
+    <ClCompile Include="Source\C.S.Graph.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Win32\C.S.GraphicsWin32.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\C.S.GridArray.cpp" />
+    <ClCompile Include="Source\C.S.InputVector.cpp" />
+    <ClCompile Include="Source\C.S.IntegratedCircuit.cpp" />
+    <ClCompile Include="Source\Win32\C.S.InterfaceWin32.cpp" />
+    <ClCompile Include="Source\C.S.IOVector.cpp" />
+    <ClCompile Include="Source\C.S.LinkCircuit.cpp" />
+    <ClCompile Include="Source\C.S.Logic.cpp" />
+    <ClCompile Include="Source\C.S.LogicComponents.cpp" />
+    <ClCompile Include="Source\C.S.LogicDelay.cpp" />
+    <ClCompile Include="Source\C.S.LogicEngine.cpp" />
+    <ClCompile Include="Source\C.S.LogicFunctions.cpp" />
+    <ClCompile Include="Source\C.S.LogicPropagation.cpp" />
+    <ClCompile Include="Source\C.S.MatrixUtil.cpp" />
+    <ClCompile Include="Source\C.S.MOSFET.cpp" />
+    <ClCompile Include="Source\C.S.Netlist.cpp" />
+    <ClCompile Include="Source\C.S.NetPointerSet.cpp" />
+    <ClCompile Include="Source\C.S.Nodes.cpp" />
+    <ClCompile Include="Source\C.S.PlaceAndRoute.cpp" />
+    <ClCompile Include="Source\C.S.Scheduling.cpp" />
+    <ClCompile Include="Source\C.S.SchematicEdit.cpp" />
+    <ClCompile Include="Source\C.S.SimulationSetup.cpp" />
+    <ClCompile Include="Source\C.S.StringTable.cpp" />
+    <ClCompile Include="Source\C.S.TextGraphics.cpp" />
+    <ClCompile Include="Source\C.S.TopoSort.cpp" />
+    <ClCompile Include="Source\C.S.Transforms.cpp" />
+    <ClCompile Include="Source\C.S.Transistor.cpp" />
+    <ClCompile Include="Source\C.S.Undo.cpp" />
+    <ClCompile Include="Source\C.S.Utilities.cpp" />
+    <ClCompile Include="Source\C.S.Window.cpp" />
+    <ClCompile Include="Source\C.S.WindowOps.cpp" />
+    <ClCompile Include="Source\CircuitSolver.cpp" />
+    <ClCompile Include="Source\Borrowed_Code\FFT.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\RLC_opt\Optimizer.h" />
+    <ClInclude Include="Source\RLC_opt\Oracle.h" />
+    <ClInclude Include="Source\RLC_opt\RLC_Tree.h" />
+    <ClInclude Include="Header\CircuitSolver.h" />
+    <ClInclude Include="Header\CompArray.h" />
+    <ClInclude Include="Header\Complex.h" />
+    <ClInclude Include="Header\ComponentID.h" />
+    <ClInclude Include="Header\Delay.h" />
+    <ClInclude Include="Header\Draw.h" />
+    <ClInclude Include="Header\Equation.h" />
+    <ClInclude Include="Header\FSMDesign.h" />
+    <ClInclude Include="Header\Graphics.h" />
+    <ClInclude Include="Header\GridArray.h" />
+    <ClInclude Include="Header\IOVector.h" />
+    <ClInclude Include="Header\Logic.h" />
+    <ClInclude Include="Header\Matrix.h" />
+    <ClInclude Include="Header\Netlist.h" />
+    <ClInclude Include="Header\NetPointerSet.h" />
+    <ClInclude Include="Header\PropagationFunctions.h" />
+    <ClInclude Include="Header\Propagations.h" />
+    <ClInclude Include="Header\resource.h" />
+    <ClInclude Include="Header\Scheduling.h" />
+    <ClInclude Include="Header\STL_Support.h" />
+    <ClInclude Include="Header\StringTable.h" />
+    <ClInclude Include="Header\TextGraphics.h" />
+    <ClInclude Include="Header\Undo.h" />
+    <ClInclude Include="Source\Win32\Win32Interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Blank.cur" />
+    <CustomBuild Include="CircuitSolver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CircuitSolver.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

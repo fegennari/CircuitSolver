@@ -1,0 +1,18 @@
+Circuit - xxx netlist
+
+INPUT 4
+INPUT 5
+8 = NAND(5,6,7)
+R1 7 1 4.7k
+2 = NOT(2)
+2 = NOT(2)
+INPUT 6
+3 = NOT(2)
+4 = AND(3,3)
+9 = AND(4,4)
+R2 8 0 22k
+OUTPUT 0
+
+
+.OPTIONS
+.END

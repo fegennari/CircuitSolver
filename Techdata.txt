@@ -1,0 +1,15 @@
+tline_seg      10
+is_distributed 1
+mos_rdsn       1.0
+mos_rdsp       1.0
+mos_cg         1.0
+mos_cd         1.0
+mos_cs         1.0
+tline_r0       1.0
+tline_l0       1.0
+tline_c0       1.0
+mos_min        1.0
+mos_max        10.0
+wire_min       1.0
+wire_max       1.0
+mw_area_r      1.0

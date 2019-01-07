@@ -1,0 +1,43 @@
+placed
+nodes
+baz bus 82 649
+bus3 bus 64 675
+e ip 54 752
+c ip 54 696
+cb1 crossbar 52 2892
+d shared 45 2950
+b ip 34 3237
+dir1 direct 28 1594
+bar ip 25 3712
+g hcube 23 3701
+sh1 shared 20 3062
+long_name ip 15 2057
+f ip 12 622
+a ip 12 1081
+foo ip 12 3154
+wire ip 2 3251
+conn ip 4 4105
+bus2 bus 2 737
+ana1 analog 1 3055
+ser1 serial 0 4130
+edges
+baz bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 bus3 
+bus3 baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+e baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+c baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+cb1 baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+d baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+b baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+dir1 baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+bar baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+g baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+sh1 baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+long_name baz baz baz baz baz baz baz baz baz baz baz baz baz baz baz 
+f baz baz baz baz baz baz baz baz baz baz baz baz 
+a baz baz baz baz baz baz baz baz baz baz baz baz 
+foo baz baz baz baz baz baz baz baz baz baz baz baz 
+wire baz baz 
+conn baz baz baz baz 
+bus2 baz baz 
+ana1 baz 
+ser1 

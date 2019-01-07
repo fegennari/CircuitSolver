@@ -1,0 +1,19 @@
+.vs/
+Debug/
+Release/
+CUTLINE.txt
+IV.TXT
+TruthTable.txt
+profile.txt
+results.out
+Win Circuit Solver.dbg
+WinCircuit Solver.001
+WinCircuit Solver.VC.VC.opendb
+WinCircuit Solver.VC.db
+WinCircuit Solver.mcp
+WinCircuit Solver.opt
+WinCircuit Solver.plg
+WinCircuit Solver.sln.docstates.suo
+WinCircuit Solver.suo
+TAGS
+*~

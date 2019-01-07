@@ -1,0 +1,18 @@
+Circuit - test netlist
+
+INPUT 8
+L1 9 10 1k
+V1 0 2 AC 40
+C1 2 1 1u
+R1 1 0 30
+L2 1 0 1.2m
+D1 22 20 DIODE
+5 = BUF(4)
+8 = NAND(6,7)
+15 = XNOR(12,13,14)
+18 = AND(16,17)
+22 = XNOR(19,20,21)
+
+
+.OPTIONS
+.END

@@ -1,0 +1,10 @@
+* Circuit - rlc_nl
+
+V1 0 2 AC 40
+C1 2 1 1u
+R1 1 0 30
+L1 1 0 1.2m
+
+
+.OPTIONS
+.END

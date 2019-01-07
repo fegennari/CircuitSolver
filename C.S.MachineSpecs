@@ -1,0 +1,9 @@
+Machine_Type: PC
+Microprocessor_Equivalent_Speed(MHz): 750
+X_Pixels: 1024
+Sound(1/0): 1
+Has_Sound_Card(1/0): 1
+Max_Subcircuits(5K_max_each): 50000
+Store_Comp_Data_in_RAM(1/0): 1
+Store_IC_Data_in_RAM(1/0): 1
+Key: 185396

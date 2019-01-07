@@ -1,0 +1,9 @@
+# Circuit - n4nl
+
+INPUT(1)
+INPUT(2)
+INPUT(3)
+OUTPUT(5)
+INPUT(4)
+5 = NAND(2 3 4 1)
+

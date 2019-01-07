@@ -1,0 +1,4 @@
+FSM _fsm2 1 0 4 4
+states 1
+0 _A 12 274
+transitions 0
